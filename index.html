@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Ristorante Con Fusion</title>
+    <title>CPSC 4380 | Home </title>
     <!-- Required meta tags always come first -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1,
@@ -12,9 +12,33 @@
     <link rel="stylesheet"
     href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 
+
 </head>
 
 <body>
+    <!--Navigation
+    navbar - declares navigation bar
+    navbar-dark - class to specify using dark navbar-->
+    <nav class="navbar navbar-light navbar-expand-sm bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+            <img src="img/logo.png" width="100" height="100">
+            </a>
+            <button class="nav-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--
+                navbar-nav - class to specify the items should be displayed inline inside navbar
+            -->
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="./aboutus.html">About</a></li>
+
+            </ul>
+            
+        </div>
+    </nav>
+
 
     <header>
         <div>
