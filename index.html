@@ -2,12 +2,16 @@
 <html lang="en">
 
 <head>
-    <title>CPSC 4380 | Home </title>
+    <title>CPSC 4380 | Course Home </title>
     <!-- Required meta tags always come first -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1,
     shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Major+Mono+Display&family=Montserrat+Subrayada:wght@700&family=Overpass:wght@300&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet"
     href="node_modules/bootstrap/dist/css/bootstrap.min.css">
@@ -19,41 +23,38 @@
     <!--Navigation
     navbar - declares navigation bar
     navbar-dark - class to specify using dark navbar-->
-    <nav class="navbar navbar-light navbar-expand-sm bg-light">
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">
-            <img src="img/logo.png" width="100" height="100">
-            </a>
-            <button class="nav-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!--
-                navbar-nav - class to specify the items should be displayed inline inside navbar
-            -->
+            <a class="navbar-brand" href="#">AND Creations</a>
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="./aboutus.html">About</a></li>
-
+                <li class="nav-item"><a class="nav-link" href="#">Courses</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
             </ul>
-            
         </div>
     </nav>
+    
+    <div class="jumbotron jumbotron-fluid text-white">
+        <div class="container text-center mask" style="background-color: hsla(0, 0%, 0%, 0.6)">
+          <h1 class="display-4">Taylor A. Donald | Portfolio</h1>
+          <p class="lead">CPSC 4380 Spring 2023 Course Homepage</p>
+        </div>
+    </div>
 
 
-    <header>
-        <div>
-            <div>
-                <div>
-                    <h1>Ristorante con Fusion</h1>
-                    <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
-                </div>
-                <div>
-                </div>
+
+    <!--<header class="container my-5">
+        <div class="jumbotron text-white">
+            <div class="bg-image p-5 text-center shadow-1-strong rounded mb-5">
+                <img src="img/new.paint.jpg" class="img-fluid" alt="Responsive img">
+                <h1>Taylor A. Donald | Portfolio</h1>
+                <p>CPSC 4380-01 Fall 2023 Course Home Page</p>
             </div>
         </div>
     </header>
-
-    <div>
+-->
+    <div class="body">
         <div>
             <div>
                 <h3>Our Lipsmacking Culinary Creations</h3>
@@ -87,47 +88,88 @@
         </div>
     </div>
 
-    <footer>
-        <div>
-            <div>             
-                <div>
-                    <h5>Links</h5>
-                    <ul>
+
+ <footer class="footer">
+        <div class="container">
+            <div class="row">             
+                <div class="col-4 offset-1 col-sm-2">
+                    <div class="mybrand">
+                        <h5>AND Creations</h5>
+                    </div>
+                    <ul class="list-unstyled">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Menu</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
-                <div>
-                    <h5>Our Address</h5>
+                <div class="col-7 col-sm-5">
+                    <h5>University of Arkansas at Little Rock</h5>
                     <address>
-		              121, Clear Water Bay Road<br>
-		              Clear Water Bay, Kowloon<br>
-		              HONG KONG<br>
-		              Tel.: +852 1234 5678<br>
-		              Fax: +852 8765 4321<br>
-		              Email: <a href="mailto:confusion@food.net">confusion@food.net</a>
-		           </address>
+		              2801 S University Avenue<br>
+		              Little Rock, Arkansas<br>
+		              72204<br>
+		              Tel.: +870 635 9010<br>
+		              Email: <a href="mailto:tadonald@ualr.edu">tadonald@ualr.edu</a>
                 </div>
-                <div>
-                    <div>
+                <div class="col-12 col-sm-4 align-self-center">
+                    <div class="text-center">
                         <a href="http://google.com/+">Google+</a>
                         <a href="http://www.facebook.com/profile.php?id=">Facebook</a>
                         <a href="http://www.linkedin.com/in/">LinkedIn</a>
                         <a href="http://twitter.com/">Twitter</a>
                         <a href="http://youtube.com/">YouTube</a>
-                        <a href="mailto:">Mail</a>
+                        <a href="mailto:tadonald@ualr.edu">Mail</a>
                     </div>
                 </div>
            </div>
-           <div>             
-                <div>
-                    <p>© Copyright 2018 Ristorante Con Fusion</p>
+           <div class="row justify-content-center">             
+                <div class="col-auto">
+                    <p>© Copyright 2023 | Taylor A. Donald</p>
                 </div>
            </div>
         </div>
     </footer>
+
+    <style>
+        body{
+            padding:50px 0px 0px 0px;
+            z-index:0;
+        }
+
+        .jumbotron {
+            background: url(img/new.paint.jpg);
+        }
+
+        .navbar-dark {
+            background-color: #2d1f4d;
+        }
+
+        footer {
+            font-size: 10px;
+            background: rgb(190, 228, 245);
+            margin-top: 8em;
+            padding-top: 30px;
+        }
+
+        .navbar-brand {
+            font-family: 'Aboreto', cursive;
+            font-family: 'Major Mono Display', monospace;
+            font-family: 'Montserrat Subrayada', sans-serif;
+            font-family: 'Overpass', sans-serif;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .mybrand {
+            font-family: 'Aboreto', cursive;
+            font-family: 'Major Mono Display', monospace;
+            font-family: 'Montserrat Subrayada', sans-serif;
+            font-family: 'Overpass', sans-serif;
+            font-family: 'Ubuntu', sans-serif;
+
+        }
+
+    </style>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
