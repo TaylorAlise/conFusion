@@ -44,31 +44,33 @@
         </div>
     </nav>
 
-    <header class="jumbotron jumbotron-fluid text-white">
-        <div class="container">
-            <div class="row">
-                <div class="col-6">
+    <header>
+        <div class="jumbotron text-white">
+        <div class="container d-flex">
+            <div class="row row-header" id="content">
+                <div class="col-12 col-sm-6 align-content-center">
                     <h1>Ristorante con Fusion</h1>
                     <p style="margin: 0; padding: 0;">We take inspiration from the World's best cuisines, and create a unique fusion experience. 
                     Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
                
-                <div class="col-3">
+                <div class="col-12 col-sm-3 align-content-center">
                     <img src="./img/logo.png" alt="logo">
                 </div>
 
-                <div class="col-3"> <!--ASK ABOUT HREF="#bottom"-->
-                    <a class="btn btn-warning btn-sm btn-block" href="#bottom" role="button">Reserve Table</a>
+                <div class="col-12 col-sm-3 justify-content-sm-center align-item-center"> 
+                    <a class="btn btn-warning btn-sm btn-block" href="#bottom" data-toggle="button">Reserve Table</a>
                 </div>
 
             </div>
         </div>
+    </div>
     </header>
 
-    <div class="container" style="margin-left: auto; margin-right: auto">
-        <div class="row justify-content-md-center">
+    <div class="container">
+        <div class="row justify-content-md-center" id="content">
 
-            <div class="col-md-7">
+            <div class="mr-5 col-md-7">
                 <div class="media">
                     <img class="img-thumbnail align-self-center mr-3" src="./img/uthappizza.png" alt="Pizza">
                     <div class="media-body">
@@ -82,7 +84,7 @@
                 </div>
             </div>
 
-            <div class="col-md-2" style="width:200px;">
+            <div class="col-md-2 ml-5">
                 <h3>Our Lipsmacking Culinary Creations</h3>
             </div>
 
@@ -91,9 +93,9 @@
         <hr> <!--vertical line-->
 
 
-        <div class="row justify-content-center">
+        <div class="row justify-content-center" id="content">
 
-            <div class="col-md-3" style="width:200px;">
+            <div class="ml-5 col-md-3" style="width:200px;">
                 <h3>This Month's Promotions</h3>
             </div>
 
@@ -118,9 +120,9 @@
 
         <hr> <!--vertical line-->
 
-        <div class="row justify-content-center">
+        <div class="row justify-content-center" id="content">
 
-            <div class="col-md-8">
+            <div class="col-12 col-md-8">
                 <div class="media">
                     <img class="img-thumbnail align-self-center mr-3" src="./img/alberto.png" alt="Alberto">
                     <div class="media-body">
@@ -143,83 +145,88 @@
 
     </div>
 
-    <div>  
-        <div class="card mx-auto w-50"> 
+    <div id="bottom" class="container mt-4 d-flex justify-content-sm-center main">
+        
+        <div class="col-12 col-sm-8">
+            <div class="card"> 
+                <span class="card-header text-white w-100 p-2">Reserve a Table</span>
 
-            <h5 class="card-header text-white w-100 p-2">Reserve a Table</h5>
-            <form class="form-inline">
-
-                <div class="row">
-
-                    <div class="form-group">
-                        <label for="NumberOfGuests">Number of Guests
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="1" name="Guests" class="custom-control-input">
-                                <label class="custom-control-label" for="1">1</label>
-                            </div>
-                            
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="2" name="Guests" class="custom-control-input">
-                                <label class="custom-control-label" for="2">2</label>
-                            </div>
-                            
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="3" name="Guests" class="custom-control-input">
-                                <label class="custom-control-label" for="3">3</label>
-                            </div>
-
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="4" name="Guests" class="custom-control-input">
-                                <label class="custom-control-label" for="4">4</label>
-                            </div>
-
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="5" name="Guests" class="custom-control-input">
-                                <label class="custom-control-label" for="5">5</label>
-                            </div>
-
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="6" name="Guests" class="custom-control-input">
-                                <label class="custom-control-label" for="6">6</label>
-                            </div>
-
-                        </label>
+                <form class="form-inline d-flex justify-content-sm-between px-3 pt-4">
+                
                         
-                    </div>
+                    <div class="row " style="padding-top: 10px; padding-bottom: 10px;">
 
-                    <div class="form-group">
-                        <label for="DateandTime" >Date and Time
-                            <div class="col">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" for="date" placeholder="Date">
-                                </div>
-    
+                        <div class="form-group">
+                                
+                            <label class="col-sm-2 col-form-label" for="Number_of_Guests">
+                                <span>Number of Guests</span> 
+                            </label>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="Guests" id="guest1" value="option1">
+                                <label class="form-check-label" for="1">1</label>
                             </div>
-    
-    
-                            <div class="col">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" for="date" placeholder="Time">
-                                </div>
-    
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="Guests" id="guest2" value="option1">
+                                <label class="form-check-label" for="2">2</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="Guests" id="guest3" value="option1">
+                                <label class="form-check-label" for="3">3</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="Guests" id="guest4" value="option1">
+                                <label class="form-check-label" for="4">4</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="Guests" id="guest5" value="option1">
+                                <label class="form-check-label" for="5">5</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="Guests" id="guest6" value="option1">
+                                <label class="form-check-label" for="6">6</label>
                             </div>
                             
+                        </div>
+                    </div>
+                          
     
+                        
+                    <div class="row" style="padding-top: 10px; padding-bottom: 10px;">
+
+                        <div class="form-group">
+                                
+                            <label class="col-sm-2 col-form-label" for="DateandTime">
+                                <span>Date and Time</span>
+                            </label>
+                            <div class="col">
+                                <input type="text" class="form-control form-control-sm" placeholder="First name">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control form-control-sm" placeholder="Last name">
+                            </div>
                             
-                        </label>
+                        </div>
                     </div>
 
-                    <button type="submit" class="btn btn-primary">Reserve</button>
 
+                    <div class="row" style="padding-top: 20px; padding-bottom: 20px;">  
+                        <div class="">
+                            <button type="submit" class="btn btn-primary">Reserve</button>
 
-                </div>
+                        </div>
 
-
-                
-                
-
-            </form>
+                    </div>
+                    
+    
+    
+                    
+                    
+    
+                </form>
+            </div>
         </div>
+
+        
 
     </div>
 

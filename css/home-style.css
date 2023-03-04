@@ -10,10 +10,13 @@
     background: #8063c5;
 }
 
-.row {
-    padding-top: 50px;
-    padding-bottom: 50px;
+
+body .row {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
+
+
 
 form {
     margin-top: auto;
@@ -21,14 +24,17 @@ form {
     margin-left: auto;
     margin-right: auto;
     max-width: 500px;
+
 }
 
 
-.card{
+
+.card {
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
+   
 }
 
 
