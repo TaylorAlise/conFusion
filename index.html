@@ -12,6 +12,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Major+Mono+Display&family=Montserrat+Subrayada:wght@700&family=Overpass:wght@300&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Montserrat+Subrayada:wght@700&family=Overpass:wght@300&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet"
     href="node_modules/bootstrap/dist/css/bootstrap.min.css">
@@ -72,9 +76,9 @@
                 <div class="card cb1" style="width: 18rem;">
                     <img class="card-img-top" src="..." alt="Card image" >
                     <div class="card-body">
-                        <h5 class="card-title">Title</h5>
+                        <h5 class="card-title">Graphics</h5>
                         <p class="card-text text-muted">This is just an example, more words coming.</p>
-                        <a href="#" class="btn btn-warning">See More</a>
+                        <a href="#" class="btn btn-warning text-white">See More</a>
                     </div>
                 </div>
             </div>
@@ -83,9 +87,9 @@
                 <div class="card cb2" style="width: 18rem;">
                     <img class="card-img-top" src="..." alt="Card image" >
                     <div class="card-body">
-                        <h5 class="card-title">Title</h5>
+                        <h5 class="card-title">Photography</h5>
                         <p class="card-text text-muted">This is just an example, more words coming.</p>
-                        <a href="#" class="btn btn-warning">See More</a>
+                        <a href="#" class="btn btn-warning text-white">Coming Soon</a>
                     </div>
                 </div>
             </div>
@@ -94,9 +98,9 @@
                 <div class="card cb3" style="width: 18rem;">
                     <img class="card-img-top" src="..." alt="Card image" >
                     <div class="card-body">
-                        <h5 class="card-title">Title</h5>
-                        <p class="card-text text-muted">This is just an example, more words coming.</p>
-                        <a href="#" class="btn btn-warning">See More</a>
+                        <h5 class="card-title">Websites</h5>
+                        <p class="card-text text-muted">Webflow | HTML5 | CSS | WordPress</p>
+                        <a href="#" class="btn btn-warning text-white">See More</a>
                     </div>
                 </div>
             </div>
@@ -105,20 +109,69 @@
         </div>
 
         <div class="bio">
-            <h5>ABOUT ME</h5>
-            <p>Hello! Welcome to my portfolio!
-             My name is Taylor Alise Donald. I was born in Memphis, Tennessee and raised in West Memphis, Arkansas. In 2019 I graduated 
-             from the Academies of West Memphis, <strong>Top 10%</strong> of my graduating class with a 3.8 GPA. Currently, I am attending the University of Arkansas 
-             at Little Rock and in my senior year of obtaining my <strong>B.S in Computer Science</strong> with a 3.5 GPA.
-            </p>
-
+            <div id="greeting" class="text-center">
+                <p><strong>Hello! Welcome to my portfolio!
+                    My brand AND Creations is commited to creating smooth, functioal web experiences that fulfills any and all 
+                    needs of the client.</strong>
+                </p>
+       
+            </div>
+            
             <div class="row">
                 <div class="col-sm">
-                    <img src="..." alt="...">
+                    <img src="./img/headshot.jpg" alt="Headshot">
                 </div>
 
                 <div class="col">
-                    <h5></h5>
+                    <h5 id="heading">About Me</h5>
+                    <p>My full name is Taylor Alise Donald. I was born in Memphis, Tennessee and raised in West Memphis, Arkansas. In 2019 I graduated 
+                    from the Academies of West Memphis, <strong>Top 10%</strong> of my graduating class with a 3.8 GPA. Currently, I am attending the University of Arkansas 
+                    at Little Rock and in my senior year of obtaining my <strong>B.S in Computer Science</strong> with a 3.5 GPA.
+                    </p>
+
+                    <h5 id="heading">EDUCATION</h5>
+                    <em>University of Arkansas at Little Rock</em>
+
+                    <ul>
+                        <li>Bachelor's B.S Computer Science</li>
+                        <li>3.5 GPA</li>
+                        <li>Graduation: Summer 2023</li>
+                    </ul>
+
+                    <div class="row">
+                        <div class="col">
+                            <h5 id="heading">EXPERIENCE</h5>
+
+                        </div>
+                        <div class="col">
+                            <h5 id="heading">SKILLS</h5>
+                            <ul>
+                                <li>Disciplined</li>
+                                <li>Determined</li>
+                                <li>Strong Work Ethic</li>
+                                <li>Quicl Learner</li>
+                                <li>Effective Communicator</li>
+                                <li>Typing</li>
+                                <li>Punctuality</li>
+
+                            </ul>
+
+                        </div>
+                    </div>
+                    
+                    <h5 id="heading">CERTIFICATIONS</h5>
+                    <p><em>2019</em> Financial Literacy</p>
+                    <br>
+
+
+
+                    <h6>Download Cover Letter and Full Resume</h6>
+                    <a href="./abcf32x.pdf" download="How-to-download-file.pdf">
+                        <button class="btn btn-primary">Cover Letter</button>
+                    </a>
+                    <a href="./abcf32x.pdf" download="How-to-download-file.pdf">
+                        <button class="btn btn-primary">Resume</button>
+                    </a>
                 </div>
 
             </div>
@@ -174,7 +227,34 @@
         body{
             padding:50px 0px 0px 0px;
             z-index:0;
+            margin: auto;
         }
+
+        .bio {
+            margin-left: 30px;
+            margin-right: 30px;
+            padding: 20px;
+            
+
+        }
+
+        #greeting {
+            font-family: 'Aboreto', cursive;
+            font-family: 'Major Mono Display', monospace;
+            font-family: 'Montserrat Subrayada', sans-serif;
+            font-family: 'Overpass', sans-serif;
+            font-family: 'Ubuntu', sans-serif;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        #heading {
+            font-family: 'Aboreto', cursive;
+            font-family: 'Montserrat Subrayada', sans-serif;
+            font-family: 'Overpass', sans-serif;
+            font-family: 'Ubuntu', sans-serif;
+
+        }
+
 
         .jumbotron {
             background: url(img/new.paint.jpg);
@@ -195,7 +275,7 @@
 
         }
 
-        .cb1 {
+        /*.cb1 {
         }
 
         .cb2 {
@@ -205,7 +285,8 @@
         .cb3 {
 
         }
-
+        */
+        
         .col {
             margin-left: 90px;
             padding-bottom: 30px;
