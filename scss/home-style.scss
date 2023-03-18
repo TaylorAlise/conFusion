@@ -1,0 +1,19 @@
+$headerbackground: #8063c5;
+$bodybackground: #cec5e4;
+
+$modalcolor: floralwhite;
+
+
+.modal-header {
+    background: $headerbackground;
+    color: $modalcolor;
+}
+
+.modal-body {
+    background: $bodybackground;
+
+}
+
+.modal-header .close {
+    color: $modalcolor;
+}
